@@ -22,7 +22,6 @@
 			<p class="small-text lfps">I am a passionate web desginer and developer who create and build websites for large and small businesses alike. Unlike my competitors I utilize goal driver development and do not rely on pre-built design frameworks or superfluous features.</p>
 			<section class="alex-links">
 				<div class="about">
-				
 					<picture>
 						<img src="images/about-me-browser.png" alt="about-me-img">
 						<h2 class="medium-text about-heading">About</h2>

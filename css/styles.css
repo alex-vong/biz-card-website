@@ -81,8 +81,12 @@ div picture {
 	margin-top: 30px;
 }
 
+.projects, .contact {
+	margin-top: 30px;
+}
+
 h2 {
-	margin: 5px; 0
+	margin: 0px;
 }
 
 /*footer*/ 
@@ -91,11 +95,6 @@ footer {
 	margin-top: 80px;
 	display: flex;
 	justify-content: center;
-/*	position: fixed;
-	bottom: 0;
-	left: 50%;
-	right: 50%;*/
-
 }
 
 footer div {
@@ -121,11 +120,9 @@ footer i {
 		font-size: clamp(18vw, 2vw, 22vw);
 	}
 
-/*
-	picture img {
-		width: 200px;
-		margin: auto;
-	}*/
+	.projects, .contact {
+	margin-top: 0px;
+}
 
 	.alex-links {
 		display: flex;
@@ -186,7 +183,7 @@ footer i {
 
 	.small-text {
 		font-size: 20px;
-		ma
+
 	}
 
 	p.lfps {
