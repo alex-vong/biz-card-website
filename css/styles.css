@@ -1,14 +1,29 @@
+
+@font-face {
+font-family: 'FabfeltScript';
+font-style: normal;
+font-weight: normal;
+src: local('FabfeltScript Bold'), url('../fab/FabfeltScript-Bold.woff') format('woff');
+}
+
 @import 'meyers-reset.css';
 @import 'reset.css';
 
 
+
 body {
-	font-family: fabfeltscript, cursive, helvetica;
+	font-family: 'FabfeltScript', cursive, helvetica;
+
+}
+
+span.hidden {
+	display: none;
 }
 
 
 .big-text {
 	font-size: clamp(22vw, 22vw, 23vw);
+	font-weight: normal;
 }
 
 .medium-text {
@@ -16,7 +31,7 @@ body {
 }
 
 .small-text {
-	font-family: aller, helvetica;
+	font-family: monaco, helvetica;
 	line-height: 1.5;
 	font-size: 18px;
 }
@@ -36,12 +51,23 @@ picture img {
 	margin: 10px 0 20px;
 }
 
-.heading picture {
+.heading > picture{
 
-	border-top: 4px solid black;
+	/*border-top: 4px solid black;*/
 	border-bottom: 4px solid black;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 }
+
+.picture-box {
+	border-top: 4px solid black; 
+	border-bottom: 4px solid black;
+
+}
+
+.hidden img {
+	padding-bottom: 10px;
+} 
+
 .heading .site-header {
 	margin: 25px 0;
 
@@ -55,8 +81,12 @@ div picture {
 	margin-top: 30px;
 }
 
+.projects, .contact {
+	margin-top: 30px;
+}
+
 h2 {
-	margin: 5px; 0
+	margin: 0px;
 }
 
 /*footer*/ 
@@ -65,7 +95,6 @@ footer {
 	margin-top: 80px;
 	display: flex;
 	justify-content: center;
-
 }
 
 footer div {
@@ -74,12 +103,105 @@ footer div {
 
 footer i {
 	font-size: 35px;
+	color: #000;
 
 }
 
 
 
+/*smaller-tablet*/
 
+@media (min-width:768px) {
+	.inner-column {
+		width: min(90%, 1000px);
+	}
+
+	.big-text {
+		font-size: clamp(18vw, 2vw, 22vw);
+	}
+
+	.projects, .contact {
+	margin-top: 0px;
+}
+
+	.alex-links {
+		display: flex;
+		justify-content: space-around;
+		max-width: 695px;
+		margin: 0 auto;
+	}
+
+	.medium-text {
+		font-size: 30px;
+	}
+
+}
+
+@media (min-width: 1024px) {
+
+
+	main {
+		display: flex;
+		height: 80vh;
+		align-content: center;
+		align-items: center;
+	}
+
+	.inner-column {
+		text-align: left;
+	}
+
+	picture.hidden, .picture-box {
+		display: none;
+	
+	}
+
+	.hidden picture img {
+		width: clamp(160px, 18vw, 200px);
+	}
+
+	span.hidden {
+		display: inline-block;
+	
+		padding-bottom: 15px;
+
+	}
+
+	.hidden picture img {
+		vertical-align: bottom;
+		padding-bottom: 15px;
+	}
+
+	.big-text {
+		font-size: clamp(150px, 10vw, 180px);
+
+	}
+
+	.medium-text {
+		font-size: 45px;
+	}
+
+	.small-text {
+		font-size: 20px;
+
+	}
+
+	p.lfps {
+		margin-top: 40px;
+	}
+
+	.alex-links {
+		text-align: center;
+		max-width: 800px;
+		margin-top: 10px;
+	}
+
+	footer {
+		position: fixed;
+		bottom: 0;
+		left: 1vw;
+	}
+}
 
 
 
