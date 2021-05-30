@@ -65,6 +65,10 @@ footer {
 	margin-top: 80px;
 	display: flex;
 	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	right: 50%;
 
 }
 
@@ -78,6 +82,30 @@ footer i {
 }
 
 
+
+/*smaller-tablet*/
+
+@media (min-width:768px) {
+	.inner-column {
+		width: min(90%, 1000px);
+	}
+
+
+	picture img {
+		width: 200px;
+		margin: auto;
+	}
+
+	.alex-links {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.medium-text {
+		font-size: 30px;
+	}
+
+}
 
 
 
