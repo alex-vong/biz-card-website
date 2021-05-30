@@ -1,9 +1,18 @@
+
+@font-face {
+font-family: 'FabfeltScript';
+font-style: normal;
+font-weight: normal;
+src: local('FabfeltScript Bold'), url('../fab/FabfeltScript-Bold.woff') format('woff');
+}
+
 @import 'meyers-reset.css';
 @import 'reset.css';
 
 
+
 body {
-	font-family: fabfeltscript, cursive, helvetica;
+	font-family: 'FabfeltScript', cursive, helvetica;
 }
 
 span.hidden {
@@ -13,6 +22,7 @@ span.hidden {
 
 .big-text {
 	font-size: clamp(22vw, 22vw, 23vw);
+	font-weight: normal;
 }
 
 .medium-text {
@@ -20,7 +30,7 @@ span.hidden {
 }
 
 .small-text {
-	font-family: aller, helvetica;
+	font-family: monaco, helvetica;
 	line-height: 1.5;
 	font-size: 18px;
 }
@@ -42,10 +52,21 @@ picture img {
 
 .heading > picture{
 
-	border-top: 4px solid black;
+	/*border-top: 4px solid black;*/
 	border-bottom: 4px solid black;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 }
+
+.picture-box {
+	border-top: 4px solid black; 
+	border-bottom: 4px solid black;
+
+}
+
+.hidden img {
+	padding-bottom: 10px;
+} 
+
 .heading .site-header {
 	margin: 25px 0;
 
@@ -69,10 +90,10 @@ footer {
 	margin-top: 80px;
 	display: flex;
 	justify-content: center;
-	position: fixed;
+/*	position: fixed;
 	bottom: 0;
 	left: 50%;
-	right: 50%;
+	right: 50%;*/
 
 }
 
@@ -82,6 +103,7 @@ footer div {
 
 footer i {
 	font-size: 35px;
+	color: #000;
 
 }
 
@@ -98,11 +120,11 @@ footer i {
 		font-size: clamp(18vw, 2vw, 22vw);
 	}
 
-
+/*
 	picture img {
 		width: 200px;
 		margin: auto;
-	}
+	}*/
 
 	.alex-links {
 		display: flex;
@@ -130,19 +152,25 @@ footer i {
 		text-align: left;
 	}
 
-	picture.hidden {
+	picture.hidden, .picture-box {
 		display: none;
+	
 	}
 
 	.hidden picture img {
-		max-width: 200px;
+		width: clamp(160px, 18vw, 200px);
 	}
 
 	span.hidden {
 		display: inline-block;
-		vertical-align: bottom;
+	
 		padding-bottom: 15px;
 
+	}
+
+	.hidden picture img {
+		vertical-align: bottom;
+		padding-bottom: 15px;
 	}
 
 	.big-text {
@@ -156,10 +184,21 @@ footer i {
 
 	.small-text {
 		font-size: 20px;
+		ma
+	}
+
+	p.lfps {
+		margin-top: 40px;
 	}
 
 	.alex-links {
 		text-align: center;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: column;
+		left: 10px;
 	}
 }
 
