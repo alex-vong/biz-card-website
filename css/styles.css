@@ -3,9 +3,106 @@
 
 
 body {
-	
+	font-family: fabfeltscript, cursive, helvetica;
+}
+
+
+.big-text {
+	font-size: clamp(22vw, 22vw, 23vw);
+}
+
+.medium-text {
+	font-size: 40px;
+}
+
+.small-text {
+	font-family: aller, helvetica;
+	line-height: 1.5;
+	font-size: 18px;
 }
 
 picture img {
-	width: 200px;
+	width: 250px;
+	margin: auto;
 }
+
+.inner-column {
+	width: min(95%, 1000px);
+	margin: 0 auto;
+	text-align: center;
+}
+
+.heading {
+	margin: 10px 0 20px;
+}
+
+.heading picture {
+
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
+	padding-bottom: 10px;
+}
+.heading .site-header {
+	margin: 25px 0;
+
+}
+
+p.lfps {
+	margin: 30px 0;
+}
+
+div picture {
+	margin-top: 30px;
+}
+
+h2 {
+	margin: 5px; 0
+}
+
+/*footer*/ 
+
+footer {
+	margin-top: 80px;
+	display: flex;
+	justify-content: center;
+
+}
+
+footer div {
+	padding: 15px 10px;
+}
+
+footer i {
+	font-size: 35px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
