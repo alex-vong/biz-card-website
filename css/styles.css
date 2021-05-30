@@ -6,6 +6,10 @@ body {
 	font-family: fabfeltscript, cursive, helvetica;
 }
 
+span.hidden {
+	display: none;
+}
+
 
 .big-text {
 	font-size: clamp(22vw, 22vw, 23vw);
@@ -36,7 +40,7 @@ picture img {
 	margin: 10px 0 20px;
 }
 
-.heading picture {
+.heading > picture{
 
 	border-top: 4px solid black;
 	border-bottom: 4px solid black;
@@ -90,6 +94,10 @@ footer i {
 		width: min(90%, 1000px);
 	}
 
+	.big-text {
+		font-size: clamp(18vw, 2vw, 22vw);
+	}
+
 
 	picture img {
 		width: 200px;
@@ -99,6 +107,8 @@ footer i {
 	.alex-links {
 		display: flex;
 		justify-content: space-around;
+		max-width: 695px;
+		margin: 0 auto;
 	}
 
 	.medium-text {
@@ -107,7 +117,51 @@ footer i {
 
 }
 
+@media (min-width: 1024px) {
 
+	main {
+		display: flex;
+		height: 80vh;
+		align-content: center;
+		align-items: center;
+	}
+
+	.inner-column {
+		text-align: left;
+	}
+
+	picture.hidden {
+		display: none;
+	}
+
+	.hidden picture img {
+		max-width: 200px;
+	}
+
+	span.hidden {
+		display: inline-block;
+		vertical-align: bottom;
+		padding-bottom: 15px;
+
+	}
+
+	.big-text {
+		font-size: clamp(150px, 10vw, 180px);
+
+	}
+
+	.medium-text {
+		font-size: 45px;
+	}
+
+	.small-text {
+		font-size: 20px;
+	}
+
+	.alex-links {
+		text-align: center;
+	}
+}
 
 
 
