@@ -1,11 +1,12 @@
 
 <?php include('head.php')?>
 
+
 <body>
 
 	<main>
 		<div class="inner-column">
-			<section class="heading">
+<!-- 			<section class="heading">
 				<div class="picture-box">
 					<picture class="hidden">
 						<img src="images/responsive.png" alt="heading-image">
@@ -17,9 +18,18 @@
 						</picture>
 					</span>
 				</h1>	
+			</section> -->
+
+			<section class="heading">
+				<picture>
+					<?php include('alex-vong.php')?>
+				</picture>
 			</section>
+
+
+
 			
-			<p class="small-text lfps">I am a passionate web desginer and developer who create and build websites for large and small businesses alike. Unlike my competitors I utilize goal driver development and do not rely on pre-built design frameworks or superfluous features.</p>
+			<p class="small-text lfps">I am a passionate web designer and developer who creates and builds websites for large and small businesses alike. Unlike my competitors I utilize goal driven development and do not rely on pre-built design frameworks or superfluous features.</p>
 			<section class="alex-links">
 				<div class="about">
 					<picture>
@@ -43,6 +53,7 @@
 			</section>
 		</div>
 	</main>
+
 
 <?php include('footer.php')?>
 
