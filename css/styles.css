@@ -53,28 +53,30 @@ picture img {
 
 .heading > picture{
 
-	/*border-top: 4px solid black;*/
-	border-bottom: 4px solid black;
-	padding-bottom: 15px;
+/*	border-top: 4px solid black;
+	border-bottom: 4px solid black;*/
+	padding-top: 15px;
+	padding-bottom: 0;
 }
 
-.picture-box {
+/*.picture-box {
 	border-top: 4px solid black; 
 	border-bottom: 4px solid black;
 
-}
+}*/
 
 .hidden img {
 	padding-bottom: 10px;
 } 
 
-.heading .site-header {
+/*.heading .site-header {
 	margin: 25px 0;
 
-}
+}*/
 
 p.lfps {
-	margin: 30px 0;
+	margin-top: 0;
+	margin-bottom: 30px;
 }
 
 div picture {
@@ -186,9 +188,9 @@ footer i {
 
 	}
 
-	p.lfps {
+/*	p.lfps {
 		margin-top: 40px;
-	}
+	}*/
 
 	.alex-links {
 		text-align: center;
@@ -196,11 +198,11 @@ footer i {
 		margin-top: 10px;
 	}
 
-	footer {
+/*	footer {
 		position: fixed;
 		bottom: 0;
 		left: 1vw;
-	}
+	}*/
 }
 
 
